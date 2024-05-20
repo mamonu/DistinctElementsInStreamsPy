@@ -1,9 +1,4 @@
 from cffi import FFI
-import os
-from math import ceil,log2
-# Get the directory of the current file
-current_dir = os.path.dirname(os.path.abspath(__file__))
-
 
 ffi = FFI()
 
@@ -12,13 +7,8 @@ ffi.cdef("""
 void cmv(int* A, int len, int thresh, double p, double* result);
 """)
 
-# Get the directory of the current file
-current_dir = os.path.dirname(os.path.abspath(__file__))
-
-# Load the shared library
-C = ffi.dlopen(os.path.join(current_dir, "cmvinterface/cmv.so"))
-
-
+# Load the C code
+C = ffi.dlopen("cmv.so")
 
 def cmv(A, thresh=None, epsilon=0.99, delta=0.9):
     if thresh is None:
