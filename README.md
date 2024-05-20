@@ -1,7 +1,7 @@
 # DistinctElementsInStreamsPy
 
 This algorithm provides an unbiased estimator for the number of unique
-elements in a stream given a limited buffer size. Proposed by Sourav Chakraborty, Kuldeep S. Meel., and N. V. Vinodchandran in the paper [Distinct Elements in Streams: An Algorithm for the Textbook](DistinctElementsInStreams.pdf)
+elements in a stream given a limited buffer size. Proposed by Sourav Chakraborty, Kuldeep S. Meel., and N. V. Vinodchandran in the paper [Distinct Elements in Streams: An Algorithm for the Textbook](DistinctElementsinStreams.pdf)
 
 
 
